@@ -1,0 +1,30 @@
+h2{ 
+    color: white; 
+    text-align: center;
+}
+  
+p{ 
+    color: white; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.fecha{
+    display: flex;
+    justify-content: right;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14.5px;
+    /* background-color: black; */
+    padding-top: 10px;
+    padding-left: 10px;
+    /* background-image: url("img/fondo2.jpg"); */
+    background-image: url("img/fondo7.jpg");
+
+    
+}

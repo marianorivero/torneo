@@ -1,0 +1,31 @@
+    // if (res2 >= (30)) { // <=34
+    //         // if (primeraDiferencia >= 34) { // >=20     >=33    >=34
+    //             porcentaje = `
+    //                 40% ${equipo1[0].nombre} <br>
+    //                 40%  EMPATE              <br>
+    //                 20% ${equipo2[0].nombre} <br>
+    //             `;
+    //             prediccion    = '<b>Afinidad:</b> '+ equipo1[0].nombre +', gana o empata ('+primeraDiferenciaUltima+')';
+    //             hayPrediccion = true;
+    //         // }
+    // }else{
+    //     if (res2 <= (-30)) { // <=34
+    //         // if (segundaDiferencia >= 34) { // >=20     >=33    >=34
+    //             // res = res*(-1);
+    //             porcentaje = `
+    //                 40% ${equipo2[0].nombre} <br>
+    //                 40% EMPATE               <br>
+    //                 20% ${equipo1[0].nombre} <br>
+    //             `;
+    //             prediccion    = '<b>Afinidad:</b> '+ equipo2[0].nombre +', gana o empata ('+segundaDiferenciaUltima+')';
+    //             hayPrediccion = true;
+    //         // }
+    //     } else {
+    //         porcentaje = `
+    //             33% ${equipo2[0].nombre} <br>
+    //             33% ${equipo1[0].nombre} <br>
+    //             Empate:33%                <br>
+    //         `;
+    //         prediccion = 'El partido no tiene prediccion';
+    //     }
+    // }
