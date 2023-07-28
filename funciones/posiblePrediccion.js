@@ -20,11 +20,11 @@ function prediccion(equipo1, equipo2) {
         if ( (miDiferencia <= 10) && (miDiferencia >= 1)) {//el primer equipo gana
             
             porcentaje = `
-            50% ${equipo1[0].nombre} <br>
-            30%  EMPATE              <br>
-            20% ${equipo2[0].nombre} <br>
+            <font color="#72D67E">45%</font> ${equipo1[0].nombre} <br>
+            <font color="#D6D372">35%</font>  Empate              <br>
+            <font color="#D67272">20%</font> ${equipo2[0].nombre} <br>
             `;
-            prediccion    = '<b>Afinidad:</b> <u>'+ equipo1[0].nombre+'</u>';
+            prediccion    = 'Afinidad: <b><font color="#72D67E">'+ equipo1[0].nombre+'</font></b>';
             hayPrediccion = true;
         }else{
             porcentaje = ``;
@@ -40,11 +40,11 @@ function prediccion(equipo1, equipo2) {
             if ( (miDiferencia >= -10)  && (miDiferencia <= -1)) {//el segundo equipo gana
                 
                 porcentaje = `
-                50% ${equipo2[0].nombre} <br>
-                30% EMPATE               <br>
-                20% ${equipo1[0].nombre} <br>
+                <font color="#72D67E">45%</font> ${equipo2[0].nombre} <br>
+                <font color="#D6D372">35%</font> Empate               <br>
+                <font color="#D67272">20%</font> ${equipo1[0].nombre} <br>
                 `;
-                prediccion    = '<b>Afinidad:</b> <u>'+ equipo2[0].nombre+'</u>';
+                prediccion    = 'Afinidad: <b><font color="#72D67E">'+ equipo2[0].nombre+'</font></b>';
                 hayPrediccion = true;
             }else{
                 porcentaje = ``;
@@ -59,7 +59,8 @@ function prediccion(equipo1, equipo2) {
     }
 
     const resultado = {
-        partido:        equipo1[0].nombre+'  -  '+equipo2[0].nombre,
+        partido:        '<font color="#9AAEFF">'+equipo1[0].nombre+'  -  '+equipo2[0].nombre+'</font>',
+        // #729FD6     #5271FF
         hay_prediccion: hayPrediccion,
         prediccion:     prediccion,
         probabilidades: porcentaje

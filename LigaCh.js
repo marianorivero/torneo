@@ -20,7 +20,7 @@ import { resultadosLiga } from "./funciones/resultados.js";
 
 
 function prediccionLigaCH() {
-    const liga     = ['ligaChile', '18', 'img/chi.png', 'Chile'];
+    const liga     = ['ligaChile', '19', 'img/chi.png', 'Chile'];
     const partidos = [
         [LaCalera, Magallanes, 'Viernes 28 de Julio'],
     

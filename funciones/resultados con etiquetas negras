@@ -1,0 +1,25 @@
+    // partidos.forEach(equipo => {
+    //     const partido = prediccion(equipo[0], equipo[1]);
+    //     if (!partido.hay_prediccion) {
+
+            // document.getElementById(liga[0]).innerHTML += `
+            //     <div 
+            //         style="
+            //         background-color: rgb(20,20,20);
+            //         max-width: 500px;
+            //         border-radius: 10px;
+            //         margin: 10px 10px 10px 10px;
+            //         padding-top: 20px;
+            //         padding-left: 20px;
+            //         padding-right: 20px;
+            //         padding-botomm: 20px;
+            //         color: grey; 
+            //         "
+            //     >
+            //         <b>${partido.partido}</b>  |  ${equipo[2]}<br> <br> 
+            //         ${partido.prediccion}<br>    
+
+            //     <div><br>
+            // `;
+    //     }
+    // });
