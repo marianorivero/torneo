@@ -27,10 +27,12 @@ import { Tigre } from '/equipos/argentina/Tigre.js';
 import { Union } from '/equipos/argentina/Union.js';
 import { Velez } from '/equipos/argentina/Velez.js';
 
-import { prediccion } from "./funciones/posiblePrediccion.js";
+
+import { resultadosLiga } from "./funciones/resultados.js";
 
 
 function prediccionLigaARG() {
+    const liga  = 'ligaArgentina';
     const fecha = [
         [Union, DefensaYJusticia, 'Viernes 28 de Julio'],
     
@@ -60,63 +62,7 @@ function prediccionLigaARG() {
 
         [GodoyCruz,  Instituto, 'Domingo 30 de Julio']
     ]
-
-
-    fecha.forEach(equipo => {
-        const partido = prediccion(equipo[0], equipo[1]);
-        if (partido.hay_prediccion) {
-
-            let liga = document.getElementById('ligaArgentina');
-
-            liga.innerHTML += `
-                <div 
-                    style="
-                    background-color: rgb(29,29,29);
-                    max-width: 500px;
-                    border-radius: 10px;
-                    margin: 10px 10px 10px 10px;
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    padding-botomm: 20px;
-                    color: white; 
-                    "
-                >
-                    <b>${partido.partido}</b>  |  ${equipo[2]}<br> <br> 
-                    ${partido.prediccion}<br><br>     
-                    ${partido.probabilidades}<br>
-                <div><br>
-            `;
-        }
-    });
-
-    fecha.forEach(equipo => {
-        const partido = prediccion(equipo[0], equipo[1]);
-        if (!partido.hay_prediccion) {
-
-            let liga = document.getElementById('ligaArgentina');
-
-            liga.innerHTML += `
-                <div 
-                    style="
-                    background-color: rgb(20,20,20);
-                    max-width: 500px;
-                    border-radius: 10px;
-                    margin: 10px 10px 10px 10px;
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    padding-botomm: 20px;
-                    color: grey; 
-                    "
-                >
-                    <b>${partido.partido}</b>  |  ${equipo[2]}<br> <br> 
-                    ${partido.prediccion}<br>    
-
-                <div><br>
-            `;
-        }
-    });
+    resultadosLiga(fecha, liga);
 }
 
 export { prediccionLigaARG };

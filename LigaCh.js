@@ -15,84 +15,30 @@ import { UCatolica } from "/equipos/chile/UCatolica.js";
 import { UdeChile } from "/equipos/chile/UdeChile.js";
 import { UEspañola } from "/equipos/chile/UEspañola.js";
 
-import { prediccion } from "./funciones/posiblePrediccion.js";
+
+import { resultadosLiga } from "./funciones/resultados.js";
 
 
 function prediccionLigaCH() {
+    const liga  = 'ligaChile';
     const fecha = [
-        [LaCalera, Magallanes, 'Viernes 21 de Julio'],
+        [LaCalera, Magallanes, 'Viernes 28 de Julio'],
     
-        [DeportivoCopiapo, Cobresal, 'Sábado 22 de Julio'],
+        [DeportivoCopiapo, Cobresal, 'Sábado 29 de Julio'],
     
-        [Huachipato, OHiggins, 'Sábado 22 de Julio'],
+        [Huachipato, OHiggins, 'Sábado 29 de Julio'],
     
-        [UdeChile, Palestino, 'Sábado 22 de Julio'],
+        [UdeChile, Palestino, 'Sábado 29 de Julio'],
     
-        [Everton,  UEspañola, 'Domingo 23 de Julio'],
+        [Everton,  UEspañola, 'Domingo 30 de Julio'],
     
-        [UCatolica, CoquimboUnido, 'Domingo 23 de Julio'],
+        [UCatolica, CoquimboUnido, 'Domingo 30 de Julio'],
 
-        [AudaxItaliano, CuricoUnido, 'Lunes 24 de Julio'],
+        [AudaxItaliano, CuricoUnido, 'Domingo 30 de Julio'],
 
-        [Ñublense,  ColoColo, 'Lunes 24 de Julio']
+        [Ñublense,  ColoColo, 'Domingo 30 de Julio']
     ]
-
-
-    fecha.forEach(equipo => {
-        const partido = prediccion(equipo[0], equipo[1]);
-        if (partido.hay_prediccion) {
-
-            let liga = document.getElementById('ligaChile');
-
-            liga.innerHTML += `
-                <div 
-                    style="
-                    background-color: rgb(29,29,29);
-                    max-width: 500px;
-                    border-radius: 10px;
-                    margin: 10px 10px 10px 10px;
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    padding-botomm: 20px;
-                    color: white; 
-                    "
-                >
-                    <b>${partido.partido}</b>  |  ${equipo[2]}<br> <br> 
-                    ${partido.prediccion}<br><br>     
-                    ${partido.probabilidades}<br>
-                <div><br>
-            `;
-        }
-    });
-
-    fecha.forEach(equipo => {
-        const partido = prediccion(equipo[0], equipo[1]);
-        if (!partido.hay_prediccion) {
-
-            let liga = document.getElementById('ligaChile');
-
-            liga.innerHTML += `
-                <div 
-                    style="
-                    background-color: rgb(20,20,20);
-                    max-width: 500px;
-                    border-radius: 10px;
-                    margin: 10px 10px 10px 10px;
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    padding-botomm: 20px;
-                    color: grey; 
-                    "
-                >
-                    <b>${partido.partido}</b>  |  ${equipo[2]}<br> <br> 
-                    ${partido.prediccion}<br>    
-
-                <div><br>
-            `;
-        }
-    });
+    resultadosLiga(fecha, liga);
 }
 
 export { prediccionLigaCH };
