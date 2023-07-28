@@ -24,8 +24,8 @@ import { resultadosLiga } from "./funciones/resultados.js";
 
 
 function prediccionLigaBR() {
-    const liga  = 'ligaBrasil';
-    const fecha = [
+    const liga     = ['ligaBrasil', '17', 'img/bra2.png', 'Brasil'];
+    const partidos = [
         [Paranaense, Cruzeiro, 'Sabado 29 de Julio'],
     
         [Fluminense, Santos, 'Sabado 29 de Julio'],
@@ -46,7 +46,7 @@ function prediccionLigaBR() {
     
         [Goias,  Gremio, 'Domingo 30 de Julio']
     ]
-    resultadosLiga(fecha, liga);
+    resultadosLiga(partidos, liga);
 }
 
 export { prediccionLigaBR }; 

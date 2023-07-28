@@ -20,8 +20,8 @@ import { resultadosLiga } from "./funciones/resultados.js";
 
 
 function prediccionLigaCH() {
-    const liga  = 'ligaChile';
-    const fecha = [
+    const liga     = ['ligaChile', '18', 'img/chi.png', 'Chile'];
+    const partidos = [
         [LaCalera, Magallanes, 'Viernes 28 de Julio'],
     
         [DeportivoCopiapo, Cobresal, 'Sábado 29 de Julio'],
@@ -38,7 +38,7 @@ function prediccionLigaCH() {
 
         [Ñublense,  ColoColo, 'Domingo 30 de Julio']
     ]
-    resultadosLiga(fecha, liga);
+    resultadosLiga(partidos, liga);
 }
 
 export { prediccionLigaCH };

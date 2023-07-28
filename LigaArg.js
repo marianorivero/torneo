@@ -32,8 +32,8 @@ import { resultadosLiga } from "./funciones/resultados.js";
 
 
 function prediccionLigaARG() {
-    const liga  = 'ligaArgentina';
-    const fecha = [
+    const liga     = ['ligaArgentina', '27', 'img/arg.png', 'Argentina'];
+    const partidos = [
         [Union, DefensaYJusticia, 'Viernes 28 de Julio'],
     
         [Argentinos, Estudiantes, 'Viernes 28 de Julio'],
@@ -62,7 +62,7 @@ function prediccionLigaARG() {
 
         [GodoyCruz,  Instituto, 'Domingo 30 de Julio']
     ]
-    resultadosLiga(fecha, liga);
+    resultadosLiga(partidos, liga);
 }
 
 export { prediccionLigaARG };
