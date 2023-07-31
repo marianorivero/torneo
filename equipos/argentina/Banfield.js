@@ -6,6 +6,11 @@ export const Banfield = [
         {
             partido:      1,
             equipo_rival: '',
+            resultado:    'P'
+        },
+        {
+            partido:      1,
+            equipo_rival: '',
             resultado:    'G'
         },
         {

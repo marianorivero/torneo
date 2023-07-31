@@ -34,33 +34,34 @@ import { resultadosLiga } from "./funciones/resultados.js";
 function prediccionLigaARG() {
     const liga     = ['ligaArgentina', '27', 'img/arg.png', 'Argentina'];
     const partidos = [
-        [Union, DefensaYJusticia, 'Viernes 28 de Julio'],
+
+        [Union, DefensaYJusticia, 'Viernes 28 de Julio', '2'],
     
-        [Argentinos, Estudiantes, 'Viernes 28 de Julio'],
+        [Argentinos, Estudiantes, 'Viernes 28 de Julio', '2'],
     
-        [Newells, Talleres, 'Viernes 28 de Julio'],
+        [Newells, Talleres, 'Viernes 28 de Julio', '2'],
     
-        [Belgrano, RosarioCentral, 'Viernes 28 de Julio'],
+        [Belgrano, RosarioCentral, 'Viernes 28 de Julio', '2'],
     
-        [River,  Racing, 'Viernes 28 de Julio'],
+        [River,  Racing, 'Viernes 28 de Julio', '1'],
     
-        [CentralCordoba, AtleticoTucuman, 'Sabado 29 de Julio'],
+        [CentralCordoba, AtleticoTucuman, 'Sabado 29 de Julio','2'],
 
-        [Sarmiento, Banfield, 'Sabado 29 de Julio'],
+        [Sarmiento, Banfield, 'Sabado 29 de Julio', '1'],
 
-        [Independiente,  Boca, 'Sabado 29 de Julio'],
+        [Independiente,  Boca, 'Sabado 29 de Julio', '2'],
 
-        [Tigre, SanLorenzo, 'Sabado 29 de Julio'],
+        [Tigre, SanLorenzo, 'Sabado 29 de Julio', '2'],
 
-        [Lanus,  BarracasCentral, 'Domingo 30 de Julio'],
+        [Lanus,  BarracasCentral, 'Domingo 30 de Julio', '1'],
 
-        [Arsenal,  Colon, 'Domingo 30 de Julio'],
+        [Arsenal,  Colon, 'Domingo 30 de Julio', '2'],
 
-        [Gimnasia,  Platense, 'Domingo 30 de Julio'],
+        [Gimnasia,  Platense, 'Domingo 30 de Julio', '2'],
 
-        [Huracan,  Velez, 'Domingo 30 de Julio'],
+        [Huracan,  Velez, 'Domingo 30 de Julio', '2'],
 
-        [GodoyCruz,  Instituto, 'Domingo 30 de Julio']
+        [GodoyCruz,  Instituto, 'Domingo 30 de Julio', '1']
     ]
     resultadosLiga(partidos, liga);
 }

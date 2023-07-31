@@ -6,6 +6,11 @@ export const Newells = [
         {
             partido:      1,
             equipo_rival: '',
+            resultado:    'G'
+        },
+        {
+            partido:      1,
+            equipo_rival: '',
             resultado:    'E'
         },
         {

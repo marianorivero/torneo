@@ -6,6 +6,16 @@ export const Talleres = [
         {
             partido:      1,
             equipo_rival: '',
+            resultado:    'E'
+        },
+        {
+            partido:      1,
+            equipo_rival: '',
+            resultado:    'G'
+        },
+        {
+            partido:      1,
+            equipo_rival: '',
             resultado:    'G'
         },
         {

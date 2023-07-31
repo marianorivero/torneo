@@ -22,21 +22,21 @@ import { resultadosLiga } from "./funciones/resultados.js";
 function prediccionLigaCH() {
     const liga     = ['ligaChile', '19', 'img/chi.png', 'Chile'];
     const partidos = [
-        [LaCalera, Magallanes, 'Viernes 28 de Julio'],
+        [OHiggins, Ñublense, 'Viernes 28 de Julio', '2'],
     
-        [DeportivoCopiapo, Cobresal, 'Sábado 29 de Julio'],
+        [Cobresal, UCatolica, 'Sábado 29 de Julio', '1'],
     
-        [Huachipato, OHiggins, 'Sábado 29 de Julio'],
+        [ColoColo, Huachipato, 'Sábado 29 de Julio', '2'],
     
-        [UdeChile, Palestino, 'Sábado 29 de Julio'],
+        [UEspañola, AudaxItaliano, 'Sábado 29 de Julio', '1'],
     
-        [Everton,  UEspañola, 'Domingo 30 de Julio'],
+        [Magallanes,  UdeChile, 'Domingo 30 de Julio', '2'],
     
-        [UCatolica, CoquimboUnido, 'Domingo 30 de Julio'],
+        [Palestino, DeportivoCopiapo, 'Domingo 30 de Julio', '1'],
 
-        [AudaxItaliano, CuricoUnido, 'Domingo 30 de Julio'],
+        [CuricoUnido, LaCalera, 'Domingo 30 de Julio', '2'],
 
-        [Ñublense,  ColoColo, 'Domingo 30 de Julio']
+        [CoquimboUnido,  Everton, 'Domingo 30 de Julio', '1']
     ]
     resultadosLiga(partidos, liga);
 }

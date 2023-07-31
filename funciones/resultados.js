@@ -16,7 +16,7 @@ function resultadosLiga(partidos, liga) {
 
 
     partidos.forEach(equipo => {
-        const partido = prediccion(equipo[0], equipo[1]);
+        const partido = prediccion(equipo[0], equipo[1], equipo[3]);
         if (partido.hay_prediccion) {
 
             document.getElementById(liga[0]).innerHTML += `
@@ -34,8 +34,9 @@ function resultadosLiga(partidos, liga) {
                     "
                 >
                     <b>${partido.partido}</b>  |  ${equipo[2]}<br><br>
-                    ${partido.prediccion}                     <br><br>     
+
                     ${partido.probabilidades}                 <br>
+                    <center>${partido.prediccion}</center>    <br>   
                 <div><br>
             `;
             huboPrediccion = true;

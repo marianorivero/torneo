@@ -2,7 +2,12 @@ export const Arsenal = [
     {
         nombre: 'Arsenal'
     },
-    [
+    [   
+        {
+            partido:      0,
+            equipo_rival: '',
+            resultado:    'P'
+        },
         {
             partido:      1,
             equipo_rival: '',

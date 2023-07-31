@@ -6,6 +6,11 @@ export const Gimnasia = [
         {
             partido:      1,
             equipo_rival: '',
+            resultado:    'E'
+        },
+        {
+            partido:      1,
+            equipo_rival: '',
             resultado:    'P'
         },
         {

@@ -7,10 +7,10 @@ function datoEquipo (equipo, posicionInicial , posicionFinal) {
     let puntosEmpatados    = 0;
 
     ultimosPartidos.forEach(partido => {
-        if ((partido.resultado == 'G') || (partido.resultado == 'g') || (partido.resultado == 'Gano') || (partido.resultado == 'gano')) {
+        if ((partido.resultado == 'G') || (partido.resultado == 'g') || (partido.resultado == 'Gano') || (partido.resultado == 'gano') || (partido.resultado == 'gana') || (partido.resultado == 'Gana')) {
             puntosGanados = puntosGanados+3;
         }
-        if ((partido.resultado == 'E') || (partido.resultado == 'e') || (partido.resultado == 'empato') || (partido.resultado == 'Empato')) {
+        if ((partido.resultado == 'E') || (partido.resultado == 'e') || (partido.resultado == 'empato') || (partido.resultado == 'Empato') || (partido.resultado == 'Empate') || (partido.resultado == 'empate')) {
             puntosEmpatados++;
         }
     });

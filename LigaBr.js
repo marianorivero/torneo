@@ -26,25 +26,26 @@ import { resultadosLiga } from "./funciones/resultados.js";
 function prediccionLigaBR() {
     const liga     = ['ligaBrasil', '17', 'img/bra2.png', 'Brasil'];
     const partidos = [
-        [Paranaense, Cruzeiro, 'Sabado 29 de Julio'],
+        
+        [Paranaense, Cruzeiro, 'Sabado 29 de Julio', '1'],
     
-        [Fluminense, Santos, 'Sabado 29 de Julio'],
+        [Fluminense, Santos, 'Sabado 29 de Julio', '1'],
     
-        [Internacional, Cuiaba, 'Sabado 29 de Julio'],
+        [Internacional, Cuiaba, 'Sabado 29 de Julio', '2'],
     
-        [Corinthians, VascoDaGama, 'Sabado 29 de Julio'],
+        [Corinthians, VascoDaGama, 'Sabado 29 de Julio', '1'],
     
-        [Fortaleza,  Bragantino, 'Sabado 29 de Julio'],
+        [Fortaleza,  Bragantino, 'Sabado 29 de Julio', '2'],
     
-        [AtleticoMineiro, Flamengo, 'Sabado 29 de Julio'],
+        [AtleticoMineiro, Flamengo, 'Sabado 29 de Julio', '2'],
     
-        [SaoPaulo, Bahia, 'Domingo 30 de Julio'],
+        [SaoPaulo, Bahia, 'Domingo 30 de Julio', '1'],
     
-        [America,  Palmeiras, 'Domingo 30 de Julio'],
+        [America,  Palmeiras, 'Domingo 30 de Julio', '2'],
     
-        [Botafogo, Coritiba, 'Domingo 30 de Julio'],
+        [Botafogo, Coritiba, 'Domingo 30 de Julio', '1'],
     
-        [Goias,  Gremio, 'Domingo 30 de Julio']
+        [Goias,  Gremio, 'Domingo 30 de Julio', '2']
     ]
     resultadosLiga(partidos, liga);
 }
